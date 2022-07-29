@@ -1,20 +1,37 @@
-import { ChevronDownIcon, CheckIcon } from '@heroicons/react/solid';
+import { ChevronDownIcon } from '@heroicons/react/solid';
 import useCollapse from 'react-collapsed';
-import { FormGroup, FormControlLabel, Checkbox } from '@mui/material';
 import useStorage from '../hooks/useStorage';
+import { useState, useEffect } from 'react';
+import FormattedCurrency from './FormattedCurrency';
 
 const Module = ({ addons, name }) => {
   const { getCollapseProps, getToggleProps, isExpanded } = useCollapse();
-  const basePrice = useStorage('price');
+  const planName = useStorage('planName');
+  // TODO redirect to Homepage when visited by the link
+
+  const basePrice = Number(useStorage('price'));
   const priceDiff = basePrice / 4;
+  // const [finalPrice, setFinalPrice] = useState(basePrice);
+  // useEffect(() => {
+  //   setFinalPrice(basePrice + priceDiff);
+  // }, [basePrice]);
 
-  const addFeature = event => {
-    console.log(event.target);
-  };
-
-  const showPrice = event => {
-    const priceElement = event.target.parentNode.parentNode.parentNode.childNodes[1];
-    priceElement.classList.toggle('hidden');
+  const toggleButton = event => {
+    const target = event.target.classList.contains('btn') ? event.target : event.target.parentNode;
+    event.preventDefault();
+    // console.log(finalPrice);
+    // if (target.classList.contains(planName)) {
+    //   setFinalPrice(finalPrice - priceDiff);
+    //   console.log('-', finalPrice);
+    // } else {
+    //   setFinalPrice(finalPrice + priceDiff);
+    //   console.log('+', finalPrice);
+    // }
+    target.classList.toggle(planName);
+    const priceElement = target.childNodes[1];
+    priceElement.classList.toggle('opacity-0');
+    // sessionStorage.setItem('finalPrice', finalPrice);
+    sessionStorage.setItem('finalPrice', basePrice);
   };
 
   return (
@@ -26,14 +43,20 @@ const Module = ({ addons, name }) => {
         </div>
       </div>
       <div {...getCollapseProps()}>
-        <FormGroup className='px-3'>
+        <div className='px-3 pb-3 gap-2 flex flex-col'>
           {addons.map(addon => (
-            <div className='flex justify-between' key={addon.id}>
-              <FormControlLabel control={<Checkbox onChange={showPrice} />} label={addon.name} className='text-lg' />
-              <div className='flex items-center text-gray-400 hidden'>+€ {priceDiff}</div>
-            </div>
+            <button
+              className={'btn flex justify-between px-2 py-1 cursor-pointer border rounded-md transition-all duration-200'}
+              key={addon.id}
+              onClick={toggleButton}
+            >
+              <div className='text-lg'>{addon.name}</div>
+              <div className='flex items-center text-gray-400 transition-all duration-200 opacity-0' onClick={e => e.stopPropagation()}>
+                + <FormattedCurrency value={priceDiff} onClick={e => e.stopPropagation()} />
+              </div>
+            </button>
           ))}
-        </FormGroup>
+        </div>
       </div>
     </div>
   );

@@ -4,9 +4,9 @@ import modules from '../../data/modules';
 
 const AddFeaturesPage = () => {
   return (
-    <div className='pt-20 flex flex-col items-center gap-8'>
+    <div className='pt-24 flex justify-center items-start gap-8'>
+      <CheckoutBox />
       <ModuleWrapper />
-      {/* <CheckoutBox /> */}
     </div>
   );
 };

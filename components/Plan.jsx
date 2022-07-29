@@ -6,6 +6,7 @@ const Plan = ({ children, planName, textClass, btnClass, price, coins, isFree })
     sessionStorage.setItem('planName', planName);
     sessionStorage.setItem('price', price);
     sessionStorage.setItem('coins', coins);
+    sessionStorage.setItem('textClass', textClass);
   };
 
   return (

@@ -38,3 +38,15 @@ th {
 td {
   @apply border-b h-12;
 }
+
+.Standard {
+  @apply border-blue-500;
+}
+
+.Plus {
+  @apply border-green-500;
+}
+
+.Pro {
+  @apply border-slate-500;
+}

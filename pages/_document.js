@@ -11,7 +11,7 @@ const Document = () => {
           rel='stylesheet'
         />
       </Head>
-      <body className='bg-gray-50 text-slate-900 relative'>
+      <body className='bg-gray-50 text-slate-900 relative after:content-[""] after:block after:h-16 min-h-screen'>
         <Main />
         <NextScript />
       </body>
