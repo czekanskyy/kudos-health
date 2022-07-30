@@ -1,37 +1,25 @@
 import { ChevronDownIcon } from '@heroicons/react/solid';
 import useCollapse from 'react-collapsed';
-import useStorage from '../hooks/useStorage';
 import { useState, useEffect } from 'react';
 import FormattedCurrency from './FormattedCurrency';
 
-const Module = ({ addons, name }) => {
-  const { getCollapseProps, getToggleProps, isExpanded } = useCollapse();
-  const planName = useStorage('planName');
-  // TODO redirect to Homepage when visited by the link
+// TODO redirect to Homepage when visited by the link
 
-  const basePrice = Number(useStorage('price'));
-  const priceDiff = basePrice / 4;
-  // const [finalPrice, setFinalPrice] = useState(basePrice);
-  // useEffect(() => {
-  //   setFinalPrice(basePrice + priceDiff);
-  // }, [basePrice]);
+const Module = ({ addons, name, props, passFunction }) => {
+  const { getCollapseProps, getToggleProps } = useCollapse();
+  const priceDiff = props.basePrice / 4;
 
   const toggleButton = event => {
     const target = event.target.classList.contains('btn') ? event.target : event.target.parentNode;
     event.preventDefault();
-    // console.log(finalPrice);
-    // if (target.classList.contains(planName)) {
-    //   setFinalPrice(finalPrice - priceDiff);
-    //   console.log('-', finalPrice);
-    // } else {
-    //   setFinalPrice(finalPrice + priceDiff);
-    //   console.log('+', finalPrice);
-    // }
-    target.classList.toggle(planName);
+    target.classList.toggle(props.planName);
     const priceElement = target.childNodes[1];
     priceElement.classList.toggle('opacity-0');
-    // sessionStorage.setItem('finalPrice', finalPrice);
-    sessionStorage.setItem('finalPrice', basePrice);
+    if (target.classList.contains(props.planName)) {
+      passFunction(priceDiff);
+    } else {
+      passFunction(-priceDiff);
+    }
   };
 
   return (

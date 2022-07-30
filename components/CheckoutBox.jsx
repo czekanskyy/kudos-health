@@ -1,43 +1,54 @@
 import FormattedCurrency from '../components/FormattedCurrency';
-import { ShoppingCartIcon } from '@heroicons/react/outline';
+import { DatabaseIcon } from '@heroicons/react/solid';
 import useStorage from '../hooks/useStorage';
 
-const CheckoutBox = () => {
-  const planName = useStorage('planName');
+const CheckoutBox = ({ planName, numEmployees, basePrice, addonsCost, coins }) => {
   const textColor = useStorage('textClass');
-  const price = useStorage('price');
-  const numEmployees = useStorage('inpValue') || 1;
-  const finalPrice = useStorage('finalPrice');
 
   return (
     <div className='w-96 p-4 bg-white rounded-md shadow-md flex flex-col items-start gap-2'>
+      {/* title */}
       <h2 className='flex justify-start items-center text-2xl gap-2 font-medium mb-2'>Plan details</h2>
-      <hr className='flex w-full h-px bg-gray-200 border-none' />
+      <hr className='w-full' />
+
+      {/* plan details */}
       <p className='flex items-center justify-between w-full'>
         Selected plan: <span className={`font-extrabold ${textColor}`}>{planName}</span>
       </p>
       <p className='flex items-center justify-between w-full'>
         Number of employees: <span className={'font-bold'}>{numEmployees}</span>
       </p>
-      <hr className='flex w-full h-px bg-gray-200 border-none' />
+      <p className='flex items-center justify-between w-full'>
+        <span className='flex items-center gap-1'>
+          <DatabaseIcon width={20} height={20} className='text-amber-500' />
+          Kudos Coins:
+        </span>
+        <span className={'font-bold'}>{coins}</span>
+      </p>
+      <hr className='w-full' />
+
+      {/* price details */}
       <p className='flex items-center justify-between w-full'>
         Base price:{' '}
         <span className={'font-bold'}>
-          <FormattedCurrency value={price} />
+          <FormattedCurrency value={basePrice} />
         </span>
       </p>
       <p className='flex items-center justify-between w-full'>
         Bonus Modules:{' '}
-        <span className={'font-bold'}>
-          <FormattedCurrency value={Number(finalPrice) - Number(price)} />
+        <span className={'font-bold text-gray-500 text-sm'}>
+          +
+          <FormattedCurrency value={addonsCost} />
         </span>
       </p>
       <p className='flex items-center justify-between w-full font-medium mt-2'>
         Total:{' '}
-        <span className={'font-extrabold'}>
-          <FormattedCurrency value={finalPrice} />
+        <span className='font-extrabold flex items-center gap-1'>
+          <FormattedCurrency value={basePrice + addonsCost} />
+          <span className='text-gray-400 font-medium text-xs'>p/m</span>
         </span>
       </p>
+      <button className={`flex items-center justify-center w-full p-2 text-white font-semibold rounded-md transition-all mt-4 btn${planName}`}>Sign up</button>
     </div>
   );
 };

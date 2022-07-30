@@ -14,7 +14,7 @@
   @apply bg-purple-500 hover:bg-purple-600;
 }
 
-.btnStd {
+.btnStandard {
   @apply bg-blue-500 hover:bg-blue-600;
 }
 
@@ -24,6 +24,18 @@
 
 .btnPro {
   @apply bg-slate-500 hover:bg-slate-600;
+}
+
+.Standard {
+  @apply border-blue-500;
+}
+
+.Plus {
+  @apply border-green-500;
+}
+
+.Pro {
+  @apply border-slate-500;
 }
 
 th,
@@ -39,14 +51,9 @@ td {
   @apply border-b h-12;
 }
 
-.Standard {
-  @apply border-blue-500;
+.navbar-list li {
+  @apply transition-all duration-300 hover:text-blue-600 underline underline-offset-2 decoration-transparent hover:decoration-blue-600;
 }
-
-.Plus {
-  @apply border-green-500;
-}
-
-.Pro {
-  @apply border-slate-500;
+.navbar-list button {
+  @apply transition-all duration-300;
 }

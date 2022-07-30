@@ -1,12 +1,24 @@
+import { useState } from 'react';
 import CheckoutBox from '../../components/CheckoutBox';
 import ModuleWrapper from '../../components/ModuleWrapper';
-import modules from '../../data/modules';
+import useStorage from '../../hooks/useStorage';
 
 const AddFeaturesPage = () => {
+  const basePrice = Number(useStorage('price'));
+  const planName = useStorage('planName');
+  const numEmployees = useStorage('inpValue') || 1;
+  const coins = useStorage('coins');
+
+  const [addonsCost, setAddonsCost] = useState(0);
+
+  const passData = childData => {
+    setAddonsCost(addonsCost + childData);
+  };
+
   return (
     <div className='pt-24 flex justify-center items-start gap-8'>
-      <CheckoutBox />
-      <ModuleWrapper />
+      <CheckoutBox planName={planName} numEmployees={numEmployees} basePrice={basePrice} addonsCost={addonsCost} coins={coins} />
+      <ModuleWrapper props={{ basePrice, planName }} pass={passData} />
     </div>
   );
 };
