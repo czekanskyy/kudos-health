@@ -5,6 +5,7 @@ module.exports = {
     extend: {},
     fontFamily: {
       poppins: ['Poppins', 'sans-serif'],
+      dongle: ['Dongle', 'sans-serif'],
     },
   },
   plugins: [],

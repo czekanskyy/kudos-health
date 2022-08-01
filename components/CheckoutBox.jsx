@@ -16,34 +16,34 @@ const CheckoutBox = ({ planName, numEmployees, basePrice, addonsCost, coins }) =
         Selected plan: <span className={`font-extrabold ${textColor}`}>{planName}</span>
       </p>
       <p className='flex items-center justify-between w-full'>
-        Number of employees: <span className={'font-bold'}>{numEmployees}</span>
+        Number of employees: <span className={'font-semibold'}>{numEmployees}</span>
       </p>
       <p className='flex items-center justify-between w-full'>
         <span className='flex items-center gap-1'>
           <DatabaseIcon width={20} height={20} className='text-amber-500' />
           Kudos Coins:
         </span>
-        <span className={'font-bold'}>{coins}</span>
+        <span className={'font-semibold'}>{coins}</span>
       </p>
       <hr className='w-full' />
 
       {/* price details */}
       <p className='flex items-center justify-between w-full'>
         Base price:{' '}
-        <span className={'font-bold'}>
+        <span className={'font-semibold'}>
           <FormattedCurrency value={basePrice} />
         </span>
       </p>
       <p className='flex items-center justify-between w-full'>
         Bonus Modules:{' '}
-        <span className={'font-bold text-gray-500 text-sm'}>
+        <span className={'font-semibold text-gray-500 text-sm'}>
           +
           <FormattedCurrency value={addonsCost} />
         </span>
       </p>
       <p className='flex items-center justify-between w-full font-medium mt-2'>
         Total:{' '}
-        <span className='font-extrabold flex items-center gap-1'>
+        <span className='font-bold flex items-center gap-1'>
           <FormattedCurrency value={basePrice + addonsCost} />
           <span className='text-gray-400 font-medium text-xs'>p/m</span>
         </span>

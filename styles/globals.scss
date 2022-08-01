@@ -10,6 +10,10 @@
   }
 }
 
+* {
+  @apply font-poppins;
+}
+
 .btnFree {
   @apply bg-purple-500 hover:bg-purple-600;
 }
@@ -51,9 +55,18 @@ td {
   @apply border-b h-12;
 }
 
-.navbar-list li {
-  @apply transition-all duration-300 hover:text-blue-600 underline underline-offset-2 decoration-transparent hover:decoration-blue-600;
+.navbar-list {
+  li {
+    @apply transition-all duration-300 hover:text-sky-600 underline underline-offset-2 decoration-transparent hover:decoration-sky-600 py-2;
+  }
+
+  button {
+    @apply transition-all duration-300;
+  }
 }
-.navbar-list button {
-  @apply transition-all duration-300;
-}
+
+// button {
+//   &:focus {
+//     @apply outline-none;
+//   }
+// }
