@@ -1,12 +1,14 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import InputBox from '../../components/InputBox';
 import FeaturesTable from '../../components/FeaturesTable';
 import PlanWrapper from '../../components/PlanWrapper';
+import { ChevronDownIcon, ChevronUpIcon } from '@heroicons/react/solid';
 
 import plans from '../../data/plans';
 
 const PlansPage = () => {
   const maxInpValue = plans[plans.length - 1].maxEmployees;
+  const [tableVisibility, setTableVisibility] = useState(false);
   const [inpValue, setInpValue] = useState('');
   const [display, setDisplay] = useState('hidden');
 
@@ -34,12 +36,25 @@ const PlansPage = () => {
     }
   };
 
+  const toggleTable = () => setTableVisibility(!tableVisibility);
+
   const planObj = pickPlans(inpValue);
+  useEffect(() => {
+    if (window.innerWidth >= 768) setTableVisibility(true);
+    window.addEventListener('resize', () => {
+      if (window.innerWidth >= 768) setTableVisibility(true);
+    });
+  }, [false]);
+
   return (
     <div className='flex flex-col items-center justify-start w-full min-h-screen pt-20 font-poppins'>
       <InputBox onChangeHandler={handleInput} display={display} val={inpValue} />
       <PlanWrapper obj={planObj} />
-      <FeaturesTable />
+      <button className='bg-white p-4 mb-8 w-11/12 flex justify-between items-center rounded-md shadow-md font-medium md:hidden' onClick={toggleTable}>
+        {tableVisibility ? 'Hide plan features' : 'Show plan features'}
+        {tableVisibility ? <ChevronUpIcon width={32} height={32} /> : <ChevronDownIcon width={32} height={32} />}
+      </button>
+      <FeaturesTable visibility={tableVisibility} />
     </div>
   );
 };

@@ -1,8 +1,8 @@
 import { CheckCircleIcon } from '@heroicons/react/solid';
 
-const FeaturesTable = () => {
+const FeaturesTable = ({ visibility }) => {
   return (
-    <section className='max-w-6xl'>
+    <section className={`max-w-6xl ${visibility ? '' : 'hidden'}`}>
       <table className='w-full table-fixed text-center text-gray-500'>
         <thead>
           <tr>

@@ -1,9 +1,9 @@
 const InputBox = ({ onChangeHandler, display }) => {
   return (
-    <section className='bg-gradient-to-br from-blue-400 to-blue-600 w-[42rem] rounded-xl shadow-lg text-white flex flex-col items-center p-8 gap-4'>
-      <h2 className='text-2xl font-semibold'>Choose your subscription package</h2>
+    <section className='bg-gradient-to-br from-blue-400 to-blue-600 w-11/12 md:w-[42rem] rounded-xl shadow-lg text-white flex flex-col items-center p-8 gap-4'>
+      <h2 className='text-base md:text-2xl font-semibold'>Choose your subscription package</h2>
       <hr className='w-1/4 mt-2 border-t-2 border-white' />
-      <p className='text-sm text-gray-50'>How many Employee do you want to give access to programme</p>
+      <p className='text-center text-xs md:text-sm text-gray-50'>How many Employee do you want to give access to programme</p>
       <input
         type='number'
         name='numEmployees'

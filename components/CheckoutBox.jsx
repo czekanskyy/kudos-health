@@ -6,7 +6,7 @@ const CheckoutBox = ({ planName, numEmployees, basePrice, addonsCost, coins }) =
   const textColor = useStorage('textClass');
 
   return (
-    <div className='w-96 p-4 bg-white rounded-md shadow-md flex flex-col items-start gap-2'>
+    <div className='w-96 mb-8 md:mb-0 p-4 bg-white rounded-md shadow-md flex flex-col items-start gap-2 order-2 md:order-1'>
       {/* title */}
       <h2 className='flex justify-start items-center text-2xl gap-2 font-medium mb-2'>Plan details</h2>
       <hr className='w-full' />

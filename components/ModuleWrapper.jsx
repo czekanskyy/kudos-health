@@ -32,8 +32,8 @@ const ModuleWrapper = ({ props, pass }) => {
   };
 
   return (
-    <section className='flex flex-col items-center justify-start gap-4'>
-      <h2 className='text-2xl font-semibold text-slate-700'>Select additional Health Modules</h2>
+    <section className='flex flex-col items-center justify-start gap-4 order-1 md:order-2'>
+      <h2 className='text-xl lg:text-2xl font-semibold text-slate-700'>Select additional Health Modules</h2>
 
       <Module name='BODY' addons={modules.body} props={props} passFunction={pass} fun={setExpanded} id={1} expanded={firstExpanded} />
       <Module name='DIET' addons={modules.diet} props={props} passFunction={pass} fun={setExpanded} id={2} expanded={secondExpanded} />

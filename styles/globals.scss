@@ -55,9 +55,10 @@ td {
   @apply border-b h-12;
 }
 
-.navbar-list {
+.navbar-list,
+.mobile-menu {
   li {
-    @apply transition-all duration-300 hover:text-sky-600 underline underline-offset-2 decoration-transparent hover:decoration-sky-600 py-2;
+    @apply transition-all duration-300 hover:text-sky-600 underline underline-offset-2 decoration-transparent hover:decoration-sky-600 py-4;
   }
 
   button {
@@ -65,8 +66,11 @@ td {
   }
 }
 
-// button {
-//   &:focus {
-//     @apply outline-none;
-//   }
-// }
+.mobile-menu {
+  * {
+    @apply border-t w-full py-4 flex justify-center;
+  }
+  *:last-child {
+    @apply border-none px-12;
+  }
+}
