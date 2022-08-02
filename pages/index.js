@@ -71,8 +71,8 @@ const Home = () => {
           <div className='flex flex-col w-1/2 px-8 gap-4'>
             <p className='text-5xl font-semibold text-blue-500'>Innovation</p>
             <span className='text-2xl'>
-              Create fun, competitive challenges driven by an individual's ability, calorie burn and activity intensity, and not just 'Steps' which favours the
-              fittest employees
+              Create fun, competitive challenges driven by an individual&apos;s ability, calorie burn and activity intensity, and not just &apos;Steps&apos;
+              which favours the fittest employees
             </span>
           </div>
         </div>
@@ -80,7 +80,7 @@ const Home = () => {
           <div className='flex flex-col w-1/2 px-8 gap-4'>
             <p className='text-5xl font-semibold text-blue-500'>Integration</p>
             <span className='text-2xl'>
-              Connect to the employees existing popular fitness tracking app's and devices for automated data collection and simple participation
+              Connect to the employees existing popular fitness tracking app&apos;s and devices for automated data collection and simple participation
             </span>
           </div>
           <div className='flex items-center justify-center w-1/2 px-8 text-blue-500'>
