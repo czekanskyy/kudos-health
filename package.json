@@ -19,7 +19,8 @@
     "react-collapsed": "^3.3.2",
     "react-dom": "18.2.0",
     "react-number-format": "^4.9.3",
-    "sass": "^1.54.0"
+    "sass": "^1.54.0",
+    "typewriter-effect": "^2.19.0"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.7",

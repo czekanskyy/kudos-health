@@ -6,6 +6,7 @@ module.exports = {
     fontFamily: {
       poppins: ['Poppins', 'sans-serif'],
       dongle: ['Dongle', 'sans-serif'],
+      gloria: ['Gloria Hallelujah', 'cursive'],
     },
   },
   plugins: [],

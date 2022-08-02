@@ -3,7 +3,7 @@ import { CheckCircleIcon } from '@heroicons/react/solid';
 const FeaturesTable = ({ visibility }) => {
   return (
     <section className={`max-w-6xl ${visibility ? '' : 'hidden'}`}>
-      <table className='w-full table-fixed text-center text-gray-500'>
+      <table className='w-full table-fixed text-center text-gray-500 text-xs sm:text-sm md:text-base'>
         <thead>
           <tr>
             <th className='text-left bg-slate-900'>Features</th>
@@ -163,8 +163,10 @@ const FeaturesTable = ({ visibility }) => {
           <tr>
             <td className='text-left text-slate-900'>
               Challenge Modes
-              <br />
-              (Team/Individual/Charity)
+              <span className='hidden md:inline'>
+                <br />
+                (Team/Individual/Charity)
+              </span>
             </td>
             <td>1</td>
             <td>All</td>
