@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import { Tooltip, Zoom } from '@mui/material';
 
-const OfferCard = ({ image, title, children }) => {
+const RewardsCard = ({ image, title, children }) => {
   return (
     <Tooltip title='Click for more' placement='top' arrow TransitionComponent={Zoom}>
       <button className='max-w-md md:w-80 lg:h-80 bg-white text-slate-500 rounded-lg shadow transition-all hover:shadow-md overflow-hidden flex flex-col'>
@@ -17,4 +17,4 @@ const OfferCard = ({ image, title, children }) => {
   );
 };
 
-export default OfferCard;
+export default RewardsCard;

@@ -1,6 +1,6 @@
 import Image from 'next/image';
 
-const Card = ({ image, title, children, imgRight }) => {
+const OurConceptCard = ({ image, title, children, imgRight }) => {
   imgRight ||= false;
   return (
     <div className='w-full h-[32rem] sm:h-80 md:h-72 lg:h-64 bg-white flex flex-col sm:flex-row rounded-xl overflow-hidden shadow transition-all hover:shadow-md max-w-4xl'>
@@ -16,4 +16,4 @@ const Card = ({ image, title, children, imgRight }) => {
   );
 };
 
-export default Card;
+export default OurConceptCard;
