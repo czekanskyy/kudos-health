@@ -18,10 +18,10 @@ const HeroSection = () => {
       </div>
       <div className='hidden md:flex absolute right-16 w-52 lg:w-72'>
         <div className='mt-40 lg:mt-4 z-10'>
-          <Image src={KudosAppImage} width={240} height={480} />
+          <Image src={KudosAppImage} alt='KudosHealthApp main screen' width={240} height={480} />
         </div>
         <div className='mt-48 lg:mt-12 -ml-16 lg:-ml-24'>
-          <Image src={KudosApp2Image} width={200} height={400} />
+          <Image src={KudosApp2Image} alt='KudosHealthApp rewards screen' width={200} height={400} />
         </div>
       </div>
     </section>
