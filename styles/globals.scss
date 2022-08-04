@@ -58,11 +58,11 @@ td {
 .navbar-list,
 .mobile-menu {
   li {
-    @apply transition-all duration-300 hover:text-sky-600 underline underline-offset-2 decoration-transparent hover:decoration-sky-600 py-4;
+    @apply transition-all hover:text-sky-600 underline underline-offset-2 decoration-transparent hover:decoration-sky-600 py-4;
   }
 
   button {
-    @apply transition-all duration-300;
+    @apply transition-all;
   }
 }
 

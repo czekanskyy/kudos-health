@@ -8,6 +8,9 @@ module.exports = {
       dongle: ['Dongle', 'sans-serif'],
       gloria: ['Gloria Hallelujah', 'cursive'],
     },
+    transitionDuration: {
+      DEFAULT: '300ms',
+    },
   },
   plugins: [],
 };

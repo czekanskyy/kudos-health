@@ -1,11 +1,20 @@
-import Link from 'next/link';
-import Image from 'next/image';
+// Images
+import HandsImage from '/public/images/hands.webp';
+import FitImage from '/public/images/fit.webp';
+import IdeaImage from '/public/images/bulb.webp';
+import SmartwatchImage from '/public/images/smartwatch.webp';
+import GiftBagsImage from '/public/images/gift-bags.webp';
+import MedicalInspectionImage from '/public/images/medical-inspection.webp';
 import KudosAppImage from '/public/images/kudos-phone.webp';
 import KudosApp2Image from '/public/images/kudos-phone2.webp';
 import GooglePlayBadgeImage from '/public/images/google-play-badge.webp';
 import AppStoreBadgeImage from '/public/images/app-store-badge.webp';
-import { PuzzleIcon, LightBulbIcon, DeviceMobileIcon } from '@heroicons/react/outline';
-// import Typewriter from 'typewriter-effect';
+// Components
+import Link from 'next/link';
+import Image from 'next/image';
+import Card from '../components/Card';
+import OfferCard from '../components/OfferCard';
+import FeaturesCard from '../components/FeaturesCard';
 
 const Home = () => {
   return (
@@ -46,47 +55,42 @@ const Home = () => {
         </div>
       </section>
       <section className='mt-64 p-4 text-slate-500 flex flex-col gap-16'>
-        <h3 className='text-3xl flex flex-col gap-12 items-center mb-16'>
+        <h2 className='text-3xl flex flex-col gap-8 items-center'>
           <span>
             Our concept is <span className='font-gloria'>simple</span>,
           </span>
           <span>affordable gamification of workplace health initiatives</span>
-        </h3>
-
-        <div className='flex max-w-6xl'>
-          <div className='flex flex-col w-1/2 px-8 gap-4'>
-            <p className='text-5xl font-semibold text-blue-500'>Inclusivity</p>
-            <span className='text-2xl'>
-              Engage and reward all your employees of all fitness levels & activities across the globe, without disrupting their existing activity choices
-            </span>
-          </div>
-          <div className='flex items-center justify-center w-1/2 px-8 text-blue-500'>
-            <PuzzleIcon width={192} height={192} />
-          </div>
+        </h2>
+        <Card title='Inclusivity' image={HandsImage}>
+          Engage and reward all your employees of all fitness levels & activities across the globe, without disrupting their existing activity choices
+        </Card>
+        <Card title='Innovation' image={IdeaImage} imgRight={true}>
+          Create fun, competitive challenges driven by an individual&apos;s ability, calorie burn and activity intensity, and not just &apos;Steps&apos; which
+          favours the fittest employees
+        </Card>
+        <Card title='Integration' image={FitImage}>
+          Connect to the employees existing popular fitness tracking app&apos;s and devices for automated data collection and simple participation
+        </Card>
+      </section>
+      <section className='mt-8 p-8 text-white flex flex-col items-center gap-16 bg-gradient-to-br w-full from-blue-400 to-blue-600 pb-20'>
+        <h2 className='text-3xl flex flex-col gap-8 items-center'>What's waiting for you?</h2>
+        <div className='max-w-6xl w-full flex flex-col md:flex-row items-center justify-center px-4 gap-8'>
+          <OfferCard title='Employee Health Rewards Shop' image={SmartwatchImage}>
+            Your very own self-service health rewards just for your Employees
+          </OfferCard>
+          <OfferCard title='Branded Health Rewards Shop' image={GiftBagsImage}>
+            Giving Employee access to rewards you don&apos;t have to pay for
+          </OfferCard>
+          <OfferCard title='Health Insurer Rewards' image={MedicalInspectionImage}>
+            Spread the cost of promoting health to your Employee&apos;s, get your Health Insurer involved
+          </OfferCard>
         </div>
-        <div className='flex max-w-6xl'>
-          <div className='flex items-center justify-center w-1/2 px-8 text-blue-500'>
-            <LightBulbIcon width={192} height={192} />
-          </div>
-          <div className='flex flex-col w-1/2 px-8 gap-4'>
-            <p className='text-5xl font-semibold text-blue-500'>Innovation</p>
-            <span className='text-2xl'>
-              Create fun, competitive challenges driven by an individual&apos;s ability, calorie burn and activity intensity, and not just &apos;Steps&apos;
-              which favours the fittest employees
-            </span>
-          </div>
-        </div>
-        <div className='flex max-w-6xl'>
-          <div className='flex flex-col w-1/2 px-8 gap-4'>
-            <p className='text-5xl font-semibold text-blue-500'>Integration</p>
-            <span className='text-2xl'>
-              Connect to the employees existing popular fitness tracking app&apos;s and devices for automated data collection and simple participation
-            </span>
-          </div>
-          <div className='flex items-center justify-center w-1/2 px-8 text-blue-500'>
-            <DeviceMobileIcon width={192} height={192} />
-          </div>
-        </div>
+      </section>
+      <section>
+        <FeaturesCard title='Challenges' id={1} colors={{ outline: 'outline-red-300', iconBg: 'bg-red-300', iconFront: 'red[500]' }}>
+          Create your very own custom “step like” challenges & competitions which engages employees&apos; of all levels of fitness, so runner&apos;s,
+          walker&apos;s, cyclist and everything in between can compete together in one initiative.
+        </FeaturesCard>
       </section>
     </div>
   );
