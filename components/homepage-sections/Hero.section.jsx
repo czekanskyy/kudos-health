@@ -2,17 +2,20 @@ import Link from 'next/link';
 import Image from 'next/image';
 import KudosAppImage from '/public/images/kudos-phone.webp';
 import KudosApp2Image from '/public/images/kudos-phone2.webp';
+import HeroImage from '/public/images/hero-image.webp';
 
 const HeroSection = () => {
   return (
-    <section className='bg-gradient-to-br w-full from-blue-400 to-blue-600 shadow-md p-8 pb-16 flex gap-24 items-start relative md:pr-72 lg:py-24'>
+    <section className='hero-section shadow-md p-8 pb-16 flex gap-24 items-start relative md:pr-72 lg:py-24'>
       <div className='px-4 flex flex-col items-start gap-4 md:gap-8 h-full justify-center'>
         <h1 className='text-white text-3xl md:text-5xl leading-snug'>
           Engage & Reward Employees <br /> Leading Healthy Lifestyles
         </h1>
         <Link href='/plans'>
           <button className='py-4 px-6 bg-white text-slate-900 rounded-md hover:shadow-lg transition-all duration-300 font-medium text-xs md:text-base'>
-            View plans
+            Subscription
+            <br />
+            plans
           </button>
         </Link>
       </div>

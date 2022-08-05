@@ -6,11 +6,11 @@ const FeaturesTable = ({ visibility }) => {
       <table className='w-full table-fixed text-center text-gray-500 text-xs sm:text-sm md:text-base'>
         <thead>
           <tr>
-            <th className='text-left bg-slate-900'>Features</th>
-            <th className='bg-purple-500'>Free</th>
-            <th className='bg-blue-500'>Standard</th>
-            <th className='bg-green-500'>Plus</th>
-            <th className='bg-slate-500'>Pro</th>
+            <th className='text-left bg-slate-500'>Features</th>
+            <th className='bg-starter-500'>Starter</th>
+            <th className='bg-standard-500'>Standard</th>
+            <th className='bg-pro-500'>Pro</th>
+            <th className='bg-premium-500'>Premium</th>
           </tr>
         </thead>
         <tbody>
@@ -33,25 +33,25 @@ const FeaturesTable = ({ visibility }) => {
             <td>
               <div className='flex justify-center'>
                 {' '}
-                <CheckCircleIcon width={24} height={24} className='text-purple-500' />{' '}
+                <CheckCircleIcon width={24} height={24} className='text-starter-500' />{' '}
               </div>
             </td>
             <td>
               <div className='flex justify-center'>
                 {' '}
-                <CheckCircleIcon width={24} height={24} className='text-blue-500' />{' '}
+                <CheckCircleIcon width={24} height={24} className='text-standard-500' />{' '}
               </div>
             </td>
             <td>
               <div className='flex justify-center'>
                 {' '}
-                <CheckCircleIcon width={24} height={24} className='text-green-500' />{' '}
+                <CheckCircleIcon width={24} height={24} className='text-pro-500' />{' '}
               </div>
             </td>
             <td>
               <div className='flex justify-center'>
                 {' '}
-                <CheckCircleIcon width={24} height={24} className='text-slate-500' />{' '}
+                <CheckCircleIcon width={24} height={24} className='text-premium-500' />{' '}
               </div>
             </td>
           </tr>
@@ -60,25 +60,25 @@ const FeaturesTable = ({ visibility }) => {
             <td>
               <div className='flex justify-center'>
                 {' '}
-                <CheckCircleIcon width={24} height={24} className='text-purple-500' />{' '}
+                <CheckCircleIcon width={24} height={24} className='text-starter-500' />{' '}
               </div>
             </td>
             <td>
               <div className='flex justify-center'>
                 {' '}
-                <CheckCircleIcon width={24} height={24} className='text-blue-500' />{' '}
+                <CheckCircleIcon width={24} height={24} className='text-standard-500' />{' '}
               </div>
             </td>
             <td>
               <div className='flex justify-center'>
                 {' '}
-                <CheckCircleIcon width={24} height={24} className='text-green-500' />{' '}
+                <CheckCircleIcon width={24} height={24} className='text-pro-500' />{' '}
               </div>
             </td>
             <td>
               <div className='flex justify-center'>
                 {' '}
-                <CheckCircleIcon width={24} height={24} className='text-slate-500' />{' '}
+                <CheckCircleIcon width={24} height={24} className='text-premium-500' />{' '}
               </div>
             </td>
           </tr>
@@ -88,19 +88,19 @@ const FeaturesTable = ({ visibility }) => {
             <td>
               <div className='flex justify-center'>
                 {' '}
-                <CheckCircleIcon width={24} height={24} className='text-blue-500' />{' '}
+                <CheckCircleIcon width={24} height={24} className='text-standard-500' />{' '}
               </div>
             </td>
             <td>
               <div className='flex justify-center'>
                 {' '}
-                <CheckCircleIcon width={24} height={24} className='text-green-500' />{' '}
+                <CheckCircleIcon width={24} height={24} className='text-pro-500' />{' '}
               </div>
             </td>
             <td>
               <div className='flex justify-center'>
                 {' '}
-                <CheckCircleIcon width={24} height={24} className='text-slate-500' />{' '}
+                <CheckCircleIcon width={24} height={24} className='text-premium-500' />{' '}
               </div>
             </td>
           </tr>
@@ -110,19 +110,19 @@ const FeaturesTable = ({ visibility }) => {
             <td>
               <div className='flex justify-center'>
                 {' '}
-                <CheckCircleIcon width={24} height={24} className='text-blue-500' />{' '}
+                <CheckCircleIcon width={24} height={24} className='text-standard-500' />{' '}
               </div>
             </td>
             <td>
               <div className='flex justify-center'>
                 {' '}
-                <CheckCircleIcon width={24} height={24} className='text-green-500' />{' '}
+                <CheckCircleIcon width={24} height={24} className='text-pro-500' />{' '}
               </div>
             </td>
             <td>
               <div className='flex justify-center'>
                 {' '}
-                <CheckCircleIcon width={24} height={24} className='text-slate-500' />{' '}
+                <CheckCircleIcon width={24} height={24} className='text-premium-500' />{' '}
               </div>
             </td>
           </tr>
@@ -133,13 +133,13 @@ const FeaturesTable = ({ visibility }) => {
             <td>
               <div className='flex justify-center'>
                 {' '}
-                <CheckCircleIcon width={24} height={24} className='text-green-500' />{' '}
+                <CheckCircleIcon width={24} height={24} className='text-pro-500' />{' '}
               </div>
             </td>
             <td>
               <div className='flex justify-center'>
                 {' '}
-                <CheckCircleIcon width={24} height={24} className='text-slate-500' />{' '}
+                <CheckCircleIcon width={24} height={24} className='text-premium-500' />{' '}
               </div>
             </td>
           </tr>
@@ -150,13 +150,13 @@ const FeaturesTable = ({ visibility }) => {
             <td>
               <div className='flex justify-center'>
                 {' '}
-                <CheckCircleIcon width={24} height={24} className='text-green-500' />{' '}
+                <CheckCircleIcon width={24} height={24} className='text-pro-500' />{' '}
               </div>
             </td>
             <td>
               <div className='flex justify-center'>
                 {' '}
-                <CheckCircleIcon width={24} height={24} className='text-slate-500' />{' '}
+                <CheckCircleIcon width={24} height={24} className='text-premium-500' />{' '}
               </div>
             </td>
           </tr>

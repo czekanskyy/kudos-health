@@ -12,7 +12,7 @@ const Header = () => {
       <div className='w-full h-16 py-2 flex items-center justify-between [&>*]:cursor-pointer'>
         <Link href='/'>
           <div id='logo' className='text-sky-500 cursor-pointer font-dongle text-6xl pt-2 font-light flex gap-2' onClick={toggleMenu}>
-            <Image src={LogoImage} height={48} width={48} layout='fixed' />
+            <Image src={LogoImage} alt='KudosHealth logo' height={48} width={48} layout='fixed' />
             KudosHealth
           </div>
         </Link>

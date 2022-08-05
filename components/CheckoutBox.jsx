@@ -48,7 +48,7 @@ const CheckoutBox = ({ planName, numEmployees, basePrice, addonsCost, coins }) =
           <span className='text-gray-400 font-medium text-xs'>p/m</span>
         </span>
       </p>
-      <button className={`flex items-center justify-center w-full p-2 text-white font-semibold rounded-md transition-all mt-4 btn${planName}`}>Sign up</button>
+      <button className={`flex items-center justify-center w-full p-2 text-white font-semibold rounded-md transition-all mt-4 btn-${planName}`}>Sign up</button>
     </div>
   );
 };

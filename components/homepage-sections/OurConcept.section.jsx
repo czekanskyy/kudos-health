@@ -7,7 +7,7 @@ import OurConceptCard from './OurConceptCard.component';
 
 const OurConceptSection = () => {
   return (
-    <section id='our-concept' className='mt-64 p-4 text-slate-500 flex flex-col gap-16'>
+    <section id='our-concept' className='mt-48 p-4 text-slate-500 flex flex-col gap-16'>
       <h2 className='text-3xl flex flex-col gap-8 items-center'>
         <span>
           Our concept is <span className='font-gloria'>simple</span>,

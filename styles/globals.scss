@@ -14,32 +14,32 @@
   @apply font-poppins;
 }
 
-.btnFree {
-  @apply bg-purple-500 hover:bg-purple-600;
+.btn-Starter {
+  @apply bg-starter-500 hover:bg-starter-600;
 }
 
-.btnStandard {
-  @apply bg-blue-500 hover:bg-blue-600;
+.btn-Standard {
+  @apply bg-standard-500 hover:bg-standard-600;
 }
 
-.btnPlus {
-  @apply bg-green-500 hover:bg-green-600;
+.btn-Pro {
+  @apply bg-pro-500 hover:bg-pro-600;
 }
 
-.btnPro {
-  @apply bg-slate-500 hover:bg-slate-600;
+.btn-Premium {
+  @apply bg-premium-500 hover:bg-premium-600;
 }
 
 .Standard {
-  @apply border-blue-500;
-}
-
-.Plus {
-  @apply border-green-500;
+  @apply border-standard-500;
 }
 
 .Pro {
-  @apply border-slate-500;
+  @apply border-pro-500;
+}
+
+.Premium {
+  @apply border-premium-500;
 }
 
 th,
@@ -73,4 +73,10 @@ td {
   *:last-child {
     @apply border-none px-12;
   }
+}
+
+.hero-section {
+  // bg-gradient-to-br w-full from-[rgba(96,165,250,0.75)] to-[rgba(37,100,235,0.75)] bg-hero bg-no-repeat bg-center
+  width: 100%;
+  background: linear-gradient(to right bottom, rgba(96, 165, 250, 0.9), rgba(37, 100, 235, 0.9)), url('/images/hero-image.webp') no-repeat center;
 }
