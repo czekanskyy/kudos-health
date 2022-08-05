@@ -1,6 +1,6 @@
 const InputBox = ({ onChangeHandler, display }) => {
   return (
-    <section className='rounded-md shadow-lg bg-white w-11/12 md:w-[42rem] text-blue-500 flex flex-col items-center p-8 gap-4 mb-6'>
+    <section className='rounded-md shadow-md bg-white w-11/12 md:w-[42rem] text-blue-500 flex flex-col items-center p-8 gap-4 mb-4'>
       <h2 className='text-base md:text-2xl font-semibold'>Choose your subscription package</h2>
       <hr className='w-1/4 mt-2 border-t-2 border-blue-500' />
       <p className='text-center text-xs md:text-sm text-blue-400'>How many Employee do you want to give access to programme</p>
