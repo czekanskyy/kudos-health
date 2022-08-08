@@ -10,7 +10,7 @@ const Plan = ({ children, planName, textClass, btnClass, price, coins, isFree })
   };
 
   return (
-    <div className='bg-white md:w-52 border border-gray-200 rounded-md flex flex-col gap-3 items-center p-6 transition-all shadow hover:shadow-md relative'>
+    <div className='bg-white md:w-52 border border-gray-200 rounded-md flex flex-col gap-3 items-center p-6 transition-all shadow hover:shadow-md relative cursor-default'>
       <h3 className={`text-2xl font-semibold ${textClass}`}>{planName}</h3>
       <hr className='w-2/3 bg-gray-200' />
       <p className='text-gray-500 text-xl font-medium'>€ {price.toLocaleString('ie-IE')}</p>
