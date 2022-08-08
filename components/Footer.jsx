@@ -10,10 +10,10 @@ const Footer = () => {
             Copyright © {new Date().getFullYear()} <span className='font-medium text-sky-500'>KudosHealth</span> | All rights reserved.
           </p>
           <p className='text-3xl flex gap-2'>
-            <a href='https://facebook.com/' target='_blank' rel='noopener noreferrer'>
+            <a href='https://www.facebook.com/KudosHealth/' target='_blank' rel='noopener noreferrer'>
               <FaFacebookSquare className='cursor-pointer' />
             </a>
-            <a href='https://twitter.com/' target='_blank' rel='noopener noreferrer'>
+            <a href='https://twitter.com/kudoshealth/' target='_blank' rel='noopener noreferrer'>
               <FaTwitterSquare className='cursor-pointer' />
             </a>
           </p>
