@@ -80,3 +80,17 @@ td {
   width: 100%;
   background: linear-gradient(to right bottom, rgba(96, 165, 250, 0.9), rgba(37, 100, 235, 0.9)), url('/images/hero-image.webp') no-repeat center;
 }
+
+.contact-hero {
+  width: 100%;
+  background: linear-gradient(to right bottom, rgba(96, 165, 250, 0.9), rgba(37, 100, 235, 0.9)), url('/images/people-talking.webp') no-repeat center;
+}
+
+#contact-form {
+  input {
+    @apply w-1/2 p-4 outline-none border rounded-md;
+  }
+  textarea {
+    @apply w-full p-4 outline-none border rounded-md;
+  }
+}
