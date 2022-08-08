@@ -1,4 +1,4 @@
-import { DatabaseIcon } from '@heroicons/react/solid';
+import { FaCoins } from 'react-icons/fa';
 import Link from 'next/link';
 
 const Plan = ({ children, planName, textClass, btnClass, price, coins, isFree }) => {
@@ -15,7 +15,7 @@ const Plan = ({ children, planName, textClass, btnClass, price, coins, isFree })
       <hr className='w-2/3 bg-gray-200' />
       <p className='text-gray-500 text-xl font-medium'>€ {price.toLocaleString('ie-IE')}</p>
       <p className='text-gray-500 text-xl font-medium flex items-center gap-1'>
-        <DatabaseIcon width={18} height={18} color='#fbbf24' />
+        <FaCoins className='text-lg text-amber-300' />
         <span className=''>{coins.toLocaleString('ie-IE')}</span>
       </p>
       <Link href={isFree ? '/' : '/add-features'}>

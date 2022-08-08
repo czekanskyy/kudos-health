@@ -8,7 +8,7 @@ const InputBox = ({ onChangeHandler, display }) => {
         type='number'
         name='numEmployees'
         id='numEmployees'
-        className='w-2/5 p-2 bg-transparent outline-none border border-blue-500 rounded-md text-center placeholder:text-blue-400 transition-all focus:w-72'
+        className='w-2/5 p-2 outline-none shadow focus:shadow-md text-white bg-blue-500 rounded-md text-center placeholder:text-white transition-all focus:w-72'
         placeholder='Enter here'
         onChange={onChangeHandler}
       />

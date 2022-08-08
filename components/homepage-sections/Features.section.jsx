@@ -1,6 +1,5 @@
 import FeaturesCard from './FeaturesCard.component';
-import { DoneRounded, HealthAndSafetyRounded, RedeemRounded, ListRounded, UpgradeRounded } from '@mui/icons-material';
-import { green, pink, red, purple, blue } from '@mui/material/colors';
+import { FaTrophy, FaMedal, FaGift, FaList, FaLevelUpAlt } from 'react-icons/fa';
 
 const FeaturesSection = () => {
   return (
@@ -14,7 +13,7 @@ const FeaturesSection = () => {
           }}
           colors={{ outline: `hover:outline-green-300`, background: `bg-green-300` }}
         >
-          <DoneRounded width={32} height={32} sx={{ color: green[500] }} />
+          <FaTrophy className='text-green-500 text-xl' />
         </FeaturesCard>
         <FeaturesCard
           text={{
@@ -23,7 +22,7 @@ const FeaturesSection = () => {
           }}
           colors={{ outline: `hover:outline-pink-300`, background: `bg-pink-300` }}
         >
-          <HealthAndSafetyRounded width={32} height={32} sx={{ color: pink[500] }} />
+          <FaMedal className='text-pink-500 text-xl' />
         </FeaturesCard>
         <FeaturesCard
           text={{
@@ -32,7 +31,7 @@ const FeaturesSection = () => {
           }}
           colors={{ outline: `hover:outline-red-300`, background: `bg-red-300` }}
         >
-          <RedeemRounded width={32} height={32} sx={{ color: red[500] }} />
+          <FaGift className='text-red-500 text-xl' />
         </FeaturesCard>
       </div>
       <div className='flex flex-col items-center md:items-stretch md:flex-row justify-center'>
@@ -43,7 +42,7 @@ const FeaturesSection = () => {
           }}
           colors={{ outline: `hover:outline-purple-300`, background: `bg-purple-300` }}
         >
-          <ListRounded width={32} height={32} sx={{ color: purple[500] }} />
+          <FaList className='text-purple-500 text-xl' />
         </FeaturesCard>
         <FeaturesCard
           text={{
@@ -52,7 +51,7 @@ const FeaturesSection = () => {
           }}
           colors={{ outline: `hover:outline-blue-300`, background: `bg-blue-300` }}
         >
-          <UpgradeRounded width={32} height={32} sx={{ color: blue[500] }} />
+          <FaLevelUpAlt className='text-blue-500 text-xl' />
         </FeaturesCard>
       </div>
     </section>

@@ -1,4 +1,4 @@
-import { CheckCircleIcon } from '@heroicons/react/solid';
+import { FaCheckCircle } from 'react-icons/fa';
 
 const FeaturesTable = ({ visibility }) => {
   return (
@@ -33,25 +33,25 @@ const FeaturesTable = ({ visibility }) => {
             <td>
               <div className='flex justify-center'>
                 {' '}
-                <CheckCircleIcon width={24} height={24} className='text-starter-500' />{' '}
+                <FaCheckCircle className='text-2xl text-starter-500' />{' '}
               </div>
             </td>
             <td>
               <div className='flex justify-center'>
                 {' '}
-                <CheckCircleIcon width={24} height={24} className='text-standard-500' />{' '}
+                <FaCheckCircle className='text-2xl text-standard-500' />{' '}
               </div>
             </td>
             <td>
               <div className='flex justify-center'>
                 {' '}
-                <CheckCircleIcon width={24} height={24} className='text-pro-500' />{' '}
+                <FaCheckCircle className='text-2xl text-pro-500' />{' '}
               </div>
             </td>
             <td>
               <div className='flex justify-center'>
                 {' '}
-                <CheckCircleIcon width={24} height={24} className='text-premium-500' />{' '}
+                <FaCheckCircle className='text-2xl text-premium-500' />{' '}
               </div>
             </td>
           </tr>
@@ -60,25 +60,25 @@ const FeaturesTable = ({ visibility }) => {
             <td>
               <div className='flex justify-center'>
                 {' '}
-                <CheckCircleIcon width={24} height={24} className='text-starter-500' />{' '}
+                <FaCheckCircle className='text-2xl text-starter-500' />{' '}
               </div>
             </td>
             <td>
               <div className='flex justify-center'>
                 {' '}
-                <CheckCircleIcon width={24} height={24} className='text-standard-500' />{' '}
+                <FaCheckCircle className='text-2xl text-standard-500' />{' '}
               </div>
             </td>
             <td>
               <div className='flex justify-center'>
                 {' '}
-                <CheckCircleIcon width={24} height={24} className='text-pro-500' />{' '}
+                <FaCheckCircle className='text-2xl text-pro-500' />{' '}
               </div>
             </td>
             <td>
               <div className='flex justify-center'>
                 {' '}
-                <CheckCircleIcon width={24} height={24} className='text-premium-500' />{' '}
+                <FaCheckCircle className='text-2xl text-premium-500' />{' '}
               </div>
             </td>
           </tr>
@@ -88,19 +88,19 @@ const FeaturesTable = ({ visibility }) => {
             <td>
               <div className='flex justify-center'>
                 {' '}
-                <CheckCircleIcon width={24} height={24} className='text-standard-500' />{' '}
+                <FaCheckCircle className='text-2xl text-standard-500' />{' '}
               </div>
             </td>
             <td>
               <div className='flex justify-center'>
                 {' '}
-                <CheckCircleIcon width={24} height={24} className='text-pro-500' />{' '}
+                <FaCheckCircle className='text-2xl text-pro-500' />{' '}
               </div>
             </td>
             <td>
               <div className='flex justify-center'>
                 {' '}
-                <CheckCircleIcon width={24} height={24} className='text-premium-500' />{' '}
+                <FaCheckCircle className='text-2xl text-premium-500' />{' '}
               </div>
             </td>
           </tr>
@@ -110,19 +110,19 @@ const FeaturesTable = ({ visibility }) => {
             <td>
               <div className='flex justify-center'>
                 {' '}
-                <CheckCircleIcon width={24} height={24} className='text-standard-500' />{' '}
+                <FaCheckCircle className='text-2xl text-standard-500' />{' '}
               </div>
             </td>
             <td>
               <div className='flex justify-center'>
                 {' '}
-                <CheckCircleIcon width={24} height={24} className='text-pro-500' />{' '}
+                <FaCheckCircle className='text-2xl text-pro-500' />{' '}
               </div>
             </td>
             <td>
               <div className='flex justify-center'>
                 {' '}
-                <CheckCircleIcon width={24} height={24} className='text-premium-500' />{' '}
+                <FaCheckCircle className='text-2xl text-premium-500' />{' '}
               </div>
             </td>
           </tr>
@@ -133,13 +133,13 @@ const FeaturesTable = ({ visibility }) => {
             <td>
               <div className='flex justify-center'>
                 {' '}
-                <CheckCircleIcon width={24} height={24} className='text-pro-500' />{' '}
+                <FaCheckCircle className='text-2xl text-pro-500' />{' '}
               </div>
             </td>
             <td>
               <div className='flex justify-center'>
                 {' '}
-                <CheckCircleIcon width={24} height={24} className='text-premium-500' />{' '}
+                <FaCheckCircle className='text-2xl text-premium-500' />{' '}
               </div>
             </td>
           </tr>
@@ -150,13 +150,13 @@ const FeaturesTable = ({ visibility }) => {
             <td>
               <div className='flex justify-center'>
                 {' '}
-                <CheckCircleIcon width={24} height={24} className='text-pro-500' />{' '}
+                <FaCheckCircle className='text-2xl text-pro-500' />{' '}
               </div>
             </td>
             <td>
               <div className='flex justify-center'>
                 {' '}
-                <CheckCircleIcon width={24} height={24} className='text-premium-500' />{' '}
+                <FaCheckCircle className='text-2xl text-premium-500' />{' '}
               </div>
             </td>
           </tr>

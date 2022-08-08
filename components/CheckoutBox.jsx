@@ -1,5 +1,5 @@
 import FormattedCurrency from '../components/FormattedCurrency';
-import { DatabaseIcon } from '@heroicons/react/solid';
+import { FaCoins } from 'react-icons/fa';
 import useStorage from '../hooks/useStorage';
 
 const CheckoutBox = ({ planName, numEmployees, basePrice, addonsCost, coins }) => {
@@ -20,7 +20,7 @@ const CheckoutBox = ({ planName, numEmployees, basePrice, addonsCost, coins }) =
       </p>
       <p className='flex items-center justify-between w-full'>
         <span className='flex items-center gap-1'>
-          <DatabaseIcon width={20} height={20} className='text-amber-500' />
+          <FaCoins className='text-lg text-amber-300' />
           Kudos Coins:
         </span>
         <span className={'font-semibold'}>{coins}</span>
