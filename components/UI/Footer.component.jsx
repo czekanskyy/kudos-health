@@ -24,10 +24,10 @@ const Footer = () => {
           programme.
         </p>
         <p className='text-xs flex flex-col gap-1 items-start w-full'>
-          <Link href='/'>
+          <Link href='/privacy-policy'>
             <button>Privacy Policy</button>
           </Link>
-          <Link href='/'>
+          <Link href='/terms-of-service'>
             <button>Terms of Service</button>
           </Link>
         </p>
