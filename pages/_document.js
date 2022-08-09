@@ -13,7 +13,7 @@ const Document = () => {
         <link rel='shortcut icon' href='images/logo.webp' />
         <link rel='apple-touch-icon' href='images/logo.webp' />
       </Head>
-      <body className='bg-gray-50 text-slate-900 relative after:content-[""] after:block after:h-64 min-h-screen'>
+      <body className='bg-gray-50 text-slate-900 relative after:content-[""] after:block after:h-80 sm:after:h-[19rem] md:after:h-72 min-h-screen'>
         <Main />
         <NextScript />
       </body>

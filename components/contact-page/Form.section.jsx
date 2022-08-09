@@ -33,15 +33,15 @@ const FormSection = () => {
     <div className={`flex w-full justify-center p-8 shadow-md bg-white transition-all border-4 ${border}`}>
       <form ref={form} onSubmit={handleSubmit} id='contact-form' className='flex max-w-6xl w-full flex-col justify-center items-center gap-6'>
         <p className='text-3xl font-medium'>Message Us</p>
-        <div className='flex w-full justify-center gap-6'>
+        <div className='flex flex-col md:flex-row w-full justify-center gap-6'>
           <input type='text' name='name' id='name' placeholder='Name' required />
           <input type='text' name='company' id='company' placeholder='Company' />
         </div>
-        <div className='flex w-full justify-center gap-6'>
+        <div className='flex flex-col md:flex-row w-full justify-center gap-6'>
           <input type='email' name='email' id='email' placeholder='E-mail address' required />
           <input type='tel' name='phone' id='phone' placeholder='Phone number' />
         </div>
-        <div className='flex w-full justify-center gap-6'>
+        <div className='flex flex-col md:flex-row w-full justify-center gap-6'>
           <input type='text' name='title' id='title' placeholder='Title' required />
           <input type='number' name='employees' id='employees' min={1} max={999999} placeholder='Number of Employees' />
         </div>
