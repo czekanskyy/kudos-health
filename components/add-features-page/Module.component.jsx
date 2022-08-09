@@ -1,6 +1,6 @@
 import { ChevronDownIcon } from '@heroicons/react/solid';
 import useCollapse from 'react-collapsed';
-import FeatureButton from './FeatureButton';
+import FeatureButton from './FeatureButton.component';
 
 // TODO redirect to Homepage when visited by the link
 

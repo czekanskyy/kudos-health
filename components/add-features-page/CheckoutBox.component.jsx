@@ -1,4 +1,4 @@
-import FormattedCurrency from '../UI/FormattedCurrency';
+import FormattedCurrency from '../UI/FormattedCurrency.component';
 import { FaCoins } from 'react-icons/fa';
 import useStorage from '../../hooks/useStorage';
 

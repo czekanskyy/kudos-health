@@ -1,4 +1,4 @@
-import Plan from './Plan';
+import Plan from './Plan.component';
 
 const PlanWrapper = ({ obj }) => {
   const planObj = obj;

@@ -1,6 +1,6 @@
 import { useState } from 'react';
-import CheckoutBox from '../../components/add-features-page/CheckoutBox';
-import ModuleWrapper from '../../components/add-features-page/ModuleWrapper';
+import CheckoutBox from '../../components/add-features-page/CheckoutBox.component';
+import ModuleWrapper from '../../components/add-features-page/ModuleWrapper.section';
 import useStorage from '../../hooks/useStorage';
 
 const AddFeaturesPage = () => {

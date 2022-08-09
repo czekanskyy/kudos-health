@@ -57,8 +57,11 @@ td {
 
 .navbar-list,
 .mobile-menu {
-  li {
-    @apply transition-all hover:text-sky-600 underline underline-offset-2 decoration-transparent hover:decoration-sky-600 py-4;
+  & > li {
+    @apply transition-all underline underline-offset-2 decoration-transparent px-3 py-5;
+    &:nth-child(odd):hover {
+      @apply text-blue-600 decoration-blue-600;
+    }
   }
 
   button {
@@ -67,16 +70,20 @@ td {
 }
 
 .mobile-menu {
-  * {
-    @apply border-t w-full py-4 flex justify-center;
+  & > li {
+    @apply border-t w-full flex justify-center px-0;
   }
-  *:last-child {
-    @apply border-none px-12;
+  .list-mobile {
+    li {
+      @apply p-3 w-full flex justify-center bg-slate-50 hover:bg-slate-200 border-b transition-all border-slate-400  text-slate-900;
+      &:first-child {
+        @apply mt-2 border-t;
+      }
+    }
   }
 }
 
 .hero-section {
-  // bg-gradient-to-br w-full from-[rgba(96,165,250,0.75)] to-[rgba(37,100,235,0.75)] bg-hero bg-no-repeat bg-center
   width: 100%;
   background: linear-gradient(to right bottom, rgba(96, 165, 250, 0.9), rgba(37, 100, 235, 0.9)), url('/images/hero-image.webp') no-repeat center;
 }
@@ -92,5 +99,19 @@ td {
   }
   textarea {
     @apply w-full p-4 outline-none border rounded-md;
+  }
+}
+
+.about {
+  &:hover {
+    ul {
+      @apply flex flex-col;
+      li {
+        @apply text-slate-900 py-4 px-8 border-b;
+        &:hover {
+          @apply text-blue-600;
+        }
+      }
+    }
   }
 }

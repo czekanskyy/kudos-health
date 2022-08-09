@@ -3,7 +3,7 @@ import { FaFacebookSquare, FaTwitterSquare } from 'react-icons/fa';
 
 const Footer = () => {
   return (
-    <footer className='bg-slate-900 text-slate-400 flex justify-center w-full z-50 absolute p-4 bottom-0 text-xs md:text-base h-64 sm:h-60 md:h-56 mt-16'>
+    <footer className='bg-slate-900 text-slate-400 flex justify-center w-full z-40 absolute p-4 bottom-0 text-xs md:text-base h-64 sm:h-60 md:h-56 mt-16'>
       <div className='max-w-5xl w-full flex flex-col justify-center items-center gap-4'>
         <div className='flex items-center justify-between w-full'>
           <p className='font-light'>

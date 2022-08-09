@@ -1,4 +1,4 @@
-import Module from './Module';
+import Module from './Module.component';
 import modules from '../../data/modules';
 import { useState } from 'react';
 

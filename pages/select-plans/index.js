@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
-import InputBox from '../../components/select-plans-page/InputBox';
-import FeaturesTable from '../../components/select-plans-page/FeaturesTable';
-import PlanWrapper from '../../components/select-plans-page/PlanWrapper';
+import InputBox from '../../components/select-plans-page/InputBox.component';
+import FeaturesTable from '../../components/select-plans-page/FeaturesTable.component';
+import PlanWrapper from '../../components/select-plans-page/PlanWrapper.section';
 import { ChevronDownIcon, ChevronUpIcon } from '@heroicons/react/solid';
 
 import plans from '../../data/plans';
@@ -20,20 +20,17 @@ const SelectPlansPage = () => {
     }
   };
 
-  const excededMax = event => {
-    setDisplay('');
-    event.target.value = maxInpValue;
-    setInpValue(maxInpValue);
-  };
-
   const handleInput = event => {
     setDisplay('hidden');
-    const input = Number(event.target.value);
+    let input = Number(event.target.value);
     setInpValue(input);
-    sessionStorage.setItem('inpValue', input);
     if (input > maxInpValue) {
-      excededMax(event);
+      setDisplay('');
+      event.target.value = maxInpValue;
+      setInpValue(maxInpValue);
+      input = maxInpValue;
     }
+    sessionStorage.setItem('inpValue', input);
   };
 
   const toggleTable = () => setTableVisibility(!tableVisibility);

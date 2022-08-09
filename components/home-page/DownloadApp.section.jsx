@@ -5,7 +5,7 @@ import AppStoreBadgeImage from '/public/images/app-store-badge.webp';
 
 const DownloadAppSection = () => {
   return (
-    <section className='flex flex-col md:hidden p-8 items-center gap-4'>
+    <section className='flex flex-col md:hidden p-8 items-center gap-4 -mb-24'>
       <h2 className='text-2xl font-semibold'>Download our App</h2>
       <div className='flex'>
         <Link href='https://apps.apple.com/us/app/kudoshealth/id1457996773?uo=4&at=11l6hc&app=itunes&ct=fnd'>
