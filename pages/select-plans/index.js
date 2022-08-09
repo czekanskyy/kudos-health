@@ -1,12 +1,12 @@
 import { useState, useEffect } from 'react';
-import InputBox from '../../components/InputBox';
-import FeaturesTable from '../../components/FeaturesTable';
-import PlanWrapper from '../../components/PlanWrapper';
+import InputBox from '../../components/select-plans-page/InputBox';
+import FeaturesTable from '../../components/select-plans-page/FeaturesTable';
+import PlanWrapper from '../../components/select-plans-page/PlanWrapper';
 import { ChevronDownIcon, ChevronUpIcon } from '@heroicons/react/solid';
 
 import plans from '../../data/plans';
 
-const PlansPage = () => {
+const SelectPlansPage = () => {
   const maxInpValue = plans[plans.length - 1].maxEmployees;
   const [tableVisibility, setTableVisibility] = useState(false);
   const [inpValue, setInpValue] = useState('');
@@ -59,4 +59,4 @@ const PlansPage = () => {
   );
 };
 
-export default PlansPage;
+export default SelectPlansPage;

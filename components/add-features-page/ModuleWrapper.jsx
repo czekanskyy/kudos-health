@@ -1,5 +1,5 @@
 import Module from './Module';
-import modules from '../data/modules';
+import modules from '../../data/modules';
 import { useState } from 'react';
 
 const ModuleWrapper = ({ props, pass }) => {
