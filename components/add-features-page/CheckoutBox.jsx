@@ -1,6 +1,6 @@
-import FormattedCurrency from '../components/FormattedCurrency';
+import FormattedCurrency from '../UI/FormattedCurrency';
 import { FaCoins } from 'react-icons/fa';
-import useStorage from '../hooks/useStorage';
+import useStorage from '../../hooks/useStorage';
 
 const CheckoutBox = ({ planName, numEmployees, basePrice, addonsCost, coins }) => {
   const textColor = useStorage('textClass');

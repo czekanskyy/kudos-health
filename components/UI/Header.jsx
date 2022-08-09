@@ -26,7 +26,7 @@ const Header = () => {
           <Link href='/contact-us'>
             <li>Contact Us</li>
           </Link>
-          <Link href='/plans'>
+          <Link href='/select-plans'>
             <li>
               <button className='text-sm bg-blue-500 hover:bg-blue-600 px-4 py-2 rounded-lg text-white'>Sign up</button>
             </li>

@@ -1,6 +1,6 @@
-import ContactHeroSection from '../../components/contactpage-sections/ContactHero.section';
-import FormSection from '../../components/contactpage-sections/Form.section';
-import InfoWrapperSection from '../../components/contactpage-sections/InfoWrapper.section';
+import ContactHeroSection from '../../components/contact-page/ContactHero.section';
+import FormSection from '../../components/contact-page/Form.section';
+import InfoWrapperSection from '../../components/contact-page/InfoWrapper.section';
 
 const ContactUsPage = () => {
   return (

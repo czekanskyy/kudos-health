@@ -1,4 +1,4 @@
-import FormattedCurrency from './FormattedCurrency';
+import FormattedCurrency from '../UI/FormattedCurrency';
 
 const FeatureButton = ({ addon, fun, priceDiff }) => {
   const { id, name } = addon;
