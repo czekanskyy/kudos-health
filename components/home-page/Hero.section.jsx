@@ -2,7 +2,6 @@ import Link from 'next/link';
 import Image from 'next/image';
 import KudosAppImage from '/public/images/kudos-phone.webp';
 import KudosApp2Image from '/public/images/kudos-phone2.webp';
-import HeroImage from '/public/images/hero-image.webp';
 
 const HeroSection = () => {
   return (

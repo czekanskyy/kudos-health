@@ -2,6 +2,7 @@ import { FaCoins } from 'react-icons/fa';
 import Link from 'next/link';
 
 const Plan = ({ children, planName, textClass, btnClass, price, coins, isFree }) => {
+  // FUNCTION: write data to sessionStorage on click
   const setStorage = e => {
     sessionStorage.setItem('planName', planName);
     sessionStorage.setItem('price', price);

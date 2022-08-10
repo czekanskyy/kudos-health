@@ -2,8 +2,6 @@ import { ChevronDownIcon } from '@heroicons/react/solid';
 import useCollapse from 'react-collapsed';
 import FeatureButton from './FeatureButton.component';
 
-// TODO redirect to Homepage when visited by the link
-
 const Module = ({ addons, name, props, passFunction, expanded, id, fun }) => {
   const config = {
     isExpanded: expanded,
@@ -12,6 +10,7 @@ const Module = ({ addons, name, props, passFunction, expanded, id, fun }) => {
 
   const priceDiff = props.basePrice / 4;
 
+  // FUNCTION: handling style & total price change on click
   const toggleButton = event => {
     const target = event.target.classList.contains('btn') ? event.target : event.target.parentNode;
     event.preventDefault();

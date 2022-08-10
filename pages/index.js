@@ -8,7 +8,9 @@ const HomePage = () => {
   return (
     <div className='min-h-screen h-full mt-16 mb-12 flex flex-col items-center'>
       <HeroSection />
+      {/* DownApp aval only on mobile view */}
       <DownloadAppSection />
+      {/*  */}
       <OurConceptSection />
       <RewardsSection />
       <FeaturesSection />
