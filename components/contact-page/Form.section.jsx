@@ -6,11 +6,13 @@ const FormSection = () => {
   const [status, setStatus] = useState('Send message');
   const [border, setBorder] = useState('border-white');
 
+  // FUNCTION in here we handling email recieving with 3rd party service. I've used EmailJS but it can be changed
   const handleSubmit = async e => {
     e.preventDefault();
     setStatus('Sending...');
     setBorder('border-yellow-500');
-    emailjs.sendForm('service_3cstgko', 'template_rxw5r9t', form.current, 'x2Rtb8ovmo7RVLPSw').then(
+    // TODO add your own service ID, template ID, and public key and get them out of here to .env file
+    emailjs.sendForm('Service ID', 'Template ID', form.current, 'Public Key').then(
       result => {
         console.log(result.text);
       },

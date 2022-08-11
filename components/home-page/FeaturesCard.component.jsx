@@ -1,7 +1,7 @@
-const FeaturesCard = ({ text: { title, desc }, colors: { outline, background }, children }) => {
+const FeaturesCard = ({ text: { title, desc }, colors: { outline, background, shadow, shadowHover }, children }) => {
   return (
     <div
-      className={`w-11/12 md:w-56 lg:w-64 p-4 text-center text-slate-700 bg-white rounded-md m-2 lg:m-4 flex flex-col items-center gap-4 outline outline-transparent transition-all shadow hover:shadow-lg ${outline}`}
+      className={`w-11/12 md:w-56 lg:w-64 p-4 text-center text-slate-700 bg-white rounded-md m-2 lg:m-4 flex flex-col items-center gap-4 outline outline-transparent transition-all shadow hover:shadow-lg shadow-green-500/25 hover:shadow-green-500/25 ${outline}`}
     >
       <div className={`flex items-center justify-center w-12 h-12 rounded-full ${background}`}>{children}</div>
       <div className='flex flex-col gap-3'>

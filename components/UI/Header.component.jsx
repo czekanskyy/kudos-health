@@ -28,15 +28,13 @@ const Header = () => {
             <li className='about relative'>
               About
               <ul className='hidden shadow-md absolute top-16 border-t-2 -left-8 bg-white'>
-                <Link href='/about'>
+                <Link href='/about#kudoshealth'>
                   <li>KudosHealth</li>
                 </Link>
-                <Link href='/about'>
+                <Link href='/about#kudoscoins'>
                   <li>KudosCoins</li>
                 </Link>
-                <Link href='/about'>
-                  <li>Rewards</li>
-                </Link>
+                {/* Here add more subnavigation elements as above */}
               </ul>
             </li>
           </Link>
@@ -66,15 +64,13 @@ const Header = () => {
             >
               <span className='transition-all underline underline-offset-2 decoration-transparent hover:decoration-blue-600 hover:text-blue-600'>About</span>
               <ul className={`list-mobile flex flex-col text-base w-full ${isVisible ? '' : 'hidden'}`}>
-                <Link href='/about'>
+                <Link href='/about#kudoshealth'>
                   <li>KudosHealth</li>
                 </Link>
-                <Link href='/about'>
+                <Link href='/about#kudoscoins'>
                   <li>KudosCoins</li>
                 </Link>
-                <Link href='/about'>
-                  <li>Rewards</li>
-                </Link>
+                {/* Here add more subnavigation elements as above */}
               </ul>
             </li>
 
